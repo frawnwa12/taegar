@@ -1890,7 +1890,7 @@ local GetWelcomeGroup = database:get(bot_id..'Get:Welcome:Group'..msg.chat_id_)
 if GetWelcomeGroup then 
 t = GetWelcomeGroup
 else  
-t = '\n• نورت حبي \n•  name \n• user' 
+t = '\n• تايجرت حبي \n•  name \n• user' 
 end 
 t = t:gsub('name',result.first_name_) 
 t = t:gsub('user',('@'..result.username_ or 'لا يوجد')) 
@@ -2911,7 +2911,7 @@ local Text = {
 "غير معرفه خمطو بساع بساع \n هاذه معرفه : @"..data.username_.."",
 'ها عار مو جان معرفك \n شكو غيرته ل @'..data.username_..' ',
 'ها يول شو مغير معرفك', 
-"منور معرف جديد : "..data.username_.."",
+"متايجر معرف جديد : "..data.username_.."",
 }
 send(msg.chat_id_, msg.id_,Text[math.random(#Text)])
 end  
@@ -2944,7 +2944,7 @@ if data.profile_photo_.big_.persistent_id_ then
 if DRAGONChengPhoto ~= data.profile_photo_.big_.persistent_id_ then 
 local Text = {
   "شكو غيرت صورتك  يا حلو ",
-  "منور طالع حلو عل صوره جديده",
+  "متايجر طالع حلو عل صوره جديده",
   "ها شو غيرت صورتك 🤔😹",
   "شكو غيرت صورتك شنو قطيت وحده جديده 😹😹🌚",
   "شو غيرت صورتك شنو تعاركت ويه الحب ؟😹🌞",
