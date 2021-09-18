@@ -9296,7 +9296,7 @@ end
 if Can_or_NotCan(result.id_, msg.chat_id_) == true then
 send(msg.chat_id_, msg.id_, '\n ⋆ عذرا لا تستطيع كتم ( '..Rutba(result.id_,msg.chat_id_)..' )')
 else
-if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
+if (result and result.type_ and result.type_ID == "ChannelChatInfo") then
 send(msg.chat_id_,msg.id_," ⋆ عذرا عزيزي المستخدم هاذا معرف قناة يرجى استخدام الامر بصوره صحيحه !")   
 return false 
 end      
