@@ -4932,13 +4932,14 @@ send(msg.chat_id_, msg.id_, " ⋆ لا يمكنك حظر مطور السورس\n
 return false 
 end
 if result.id_ == tonumber(1970574026) then
-send(msg.chat_id_, msg.id_, " ⋆ لا يمكنك حظر المبرمج فرعون يقلبمك \n")
+send(msg.chat_id_, msg.id_, " لا يمكنك حظر المبرمج فرعون يقلبمك \n")
 return false 
 end
 if result.id_ == tonumber(1879324805) then
-send(msg.chat_id_, msg.id_, "  لا يمكنك حظر المبرج فودكا يقلبمك \n")
+send(msg.chat_id_, msg.id_, " لا يمكنك حظر المبرج فودكا يقلبمك \n")
 return false 
-usertext = '\n ⋆ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or 'AstrokswaxBeka')..')'
+end
+usertext = '\n ⋆ الـعـضو   ↚ ['..result.title_..'](t.me/'..(username or'AstrokswaxBeka')..')'
 status  = '\n ⋆ تم حظرو عام من الجروبات '
 texts = usertext..status
 database:sadd(bot_id..'GBan:User', result.id_)
